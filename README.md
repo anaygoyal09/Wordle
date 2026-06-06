@@ -61,5 +61,5 @@ Contributions, issues, and feature requests are welcome! Feel free to check out 
 ## 📝 Credits
 
 - **Original Game:** [Josh Wardle's Wordle](https://www.nytimes.com/games/wordle/index.html)
-- **Author/Base Configurations:** Scott DeRuiter (Constants) & additional contributors. 
+- **Author/Base Configurations:** Anay Goyal (Constants) & additional contributors. 
 - **Developer:** [Anay Goyal]
