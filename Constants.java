@@ -3,7 +3,7 @@ import java.awt.event.KeyEvent;
 /**
  *	Display constants used in the Wordle game
  *
- *	@author		Scott DeRuiter
+ *	@author		Anay Goyal
  *	@version	1.0
  *
  *	This file is complete.
