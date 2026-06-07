@@ -1,65 +1,60 @@
-# Wordle (Java Clone)
+# Wordle
 
-Welcome to the **Wordle Java Clone**! This project is a locally playable 2D graphical adaptation of the popular daily word game, Wordle. Built purely in Java, it challenges players to guess a hidden 5-letter word within 6 attempts using visual, color-coded feedback.
+A Java-based Wordle clone project. This repository currently contains the UI constants, image assets, and allowed-word list needed for a desktop Wordle game.
 
-## 🌟 Features
+> Status: in progress. `Wordle.java` is currently only a starter file, so the game is not playable yet.
 
-* **Visual Interface:** A custom graphical window rendering the 6x5 grid and a virtual on-screen keyboard, closely matching the original design.
-* **Responsive Feedback:** Letters dynamically change color (Green, Yellow, Gray) based on their accuracy in your guesses.
-* **Keyboard Integration:** Supports typing via a physical keyboard as well as selecting keys from the interactive on-screen virtual keyboard.
-* **Game Mechanics:** Enforces 5-letter words, 6 limits on guesses, with complete game loop (win/loss conditions and automatic detection).
+## Repository
 
-## 🛠️ Built With
+https://github.com/anaygoyal09/Wordle
 
-* **Language:** Java (JDK 8 or higher recommended)
-* **Graphics:** Java AWT/Swing (`java.awt.*`, `javax.swing.*`)
+## What's Included
 
-## 🚀 Getting Started
+- `Constants.java` - Screen dimensions, draw delay, keyboard labels, key codes, and virtual keyboard coordinates.
+- `Wordle.java` - Starter file for the main game implementation.
+- `words5allowed.txt` - Allowed five-letter word list.
+- `letterFrame*.png` - Tile graphics for empty, green, yellow, and dark gray letter states.
+- `keyBackground*.png` - Keyboard graphics for normal, green, yellow, dark gray, and larger key states.
 
-### Prerequisites
-Make sure you have [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/downloads/) installed on your machine. You can verify your installation by running:
+## Planned Features
+
+- A 6-row, 5-column Wordle board.
+- Physical keyboard input and clickable on-screen keyboard controls.
+- Valid five-letter guess checking using `words5allowed.txt`.
+- Green, yellow, and gray feedback after each submitted guess.
+- Win/loss dialogs and reset behavior.
+
+## Requirements
+
+- Java Development Kit (JDK) 8 or newer.
+
+Check your Java installation with:
+
 ```bash
 java -version
 ```
 
-### Installation & Running
+## Build
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/Wordle.git
-   cd Wordle
-   ```
+Once `Wordle.java` contains the main game class, compile the project from the repository root:
 
-2. **Compile the source code:**
-   ```bash
-   javac *.java
-   ```
+```bash
+javac *.java
+```
 
-3. **Run the application:**
-   ```bash
-   java Wordle   # (Or the name of your main class)
-   ```
+Then run:
 
-## 🎮 How to Play
+```bash
+java Wordle
+```
 
-1. Guess the hidden **Wordle** in 6 tries.
-2. Each guess must be a valid 5-letter word. Hit the `ENTER` button to submit.
-3. After each guess, the color of the tiles will change to show how close your guess was to the word:
-   * 🟩 **Green:** The letter is in the word and in the correct spot.
-   * 🟨 **Yellow:** The letter is in the word but in the wrong spot.
-   * ⬛ **Gray:** The letter is not in the word in any spot.
+## Project Notes
 
-## 📂 Project Structure
+- Keep the `.png` assets in the same directory as the Java source files unless the code is updated to load them from another location.
+- `words5allowed.txt` should stay available at runtime so the game can validate guesses and choose answer words.
+- `Constants.class` is a compiled output file and can be regenerated with `javac`.
 
-- `Constants.java` - Stores all the layout constants for the game window (width, height, delay) and screen coordinates/key mappings for the virtual UI keyboard.
-- *(Add your main game loop, dictionary loader, and drawing classes here once implemented)*
+## Credits
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check out the [issues page](https://github.com/yourusername/Wordle/issues) if you have any suggestions.
-
-## 📝 Credits
-
-- **Original Game:** [Josh Wardle's Wordle](https://www.nytimes.com/games/wordle/index.html)
-- **Author/Base Configurations:** Anay Goyal (Constants) & additional contributors. 
-- **Developer:** [Anay Goyal]
+- Inspired by Wordle, originally created by Josh Wardle.
+- Developed by Anay Goyal.
